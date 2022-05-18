@@ -6,3 +6,7 @@ Personal solutions and tips to some of the Daily Byte exercises.
 <ul>
   <li>JavasScript</li>
 </ul>
+
+## Website
+  <a src="https://thedailybyte.dev/">The Daily Byte</a>
+
