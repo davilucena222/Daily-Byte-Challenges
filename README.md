@@ -8,5 +8,9 @@ Personal solutions and tips to some of the Daily Byte exercises.
 </ul>
 
 ## Website
-  <a src="https://thedailybyte.dev/">The Daily Byte</a>
+  <ul>
+    <li>
+        <a href="https://thedailybyte.dev/">The Daily Byte</a>
+    </li>
+</ul>
 
