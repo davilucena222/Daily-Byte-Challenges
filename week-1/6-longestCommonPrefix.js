@@ -1,3 +1,4 @@
+//time complexity = O(N^2)
 function longestCommonPrefix(stringsArray){
   let stringOne = stringsArray[0];
   let stringTwo = 0;

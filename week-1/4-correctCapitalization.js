@@ -1,3 +1,4 @@
+//time complexity = O(N)
 function correctCapitalization(string){
   for(let i = 0; i < string.length; i++) {
     let stringPosition = string[i];

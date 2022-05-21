@@ -1,3 +1,4 @@
+//time complexity = O(N)
 function binaryStringSum(binaryString1, binaryString2){
   let result = '';
   let sum = 0;

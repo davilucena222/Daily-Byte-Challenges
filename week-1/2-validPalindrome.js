@@ -1,3 +1,4 @@
+//time complexity = O(1)
 function validPalindrome(stringName){
   // let stringNormal = stringName;
   let re = /[\W_]/g;

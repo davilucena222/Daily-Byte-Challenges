@@ -1,3 +1,4 @@
+//time complexity = O(N)
 function vacuumCleanerRout(stringRobotMove){
   let sum = 0;
   
