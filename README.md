@@ -2,7 +2,7 @@
 
 Personal solutions and tips to some of the Daily Byte exercises.
 
-## Techologies
+## Technologies
 <ul>
   <li>JavasScript</li>
 </ul>
