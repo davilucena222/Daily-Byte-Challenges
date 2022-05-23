@@ -1,3 +1,4 @@
+//time complexity = O(N^2)
 function sumOfTwo(array, k){
   let value1 = 0;
   let value2 = 0;
