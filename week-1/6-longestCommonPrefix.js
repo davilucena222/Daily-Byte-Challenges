@@ -1,4 +1,16 @@
-//time complexity = O(N^2)
+/* 
+  This question is asked by Microsoft. Given an array of strings, return the longest common prefix that is shared amongst all strings.
+  Note: you may assume all strings only contain lowercase alphabetical characters.
+
+  Ex: Given the following arrays...
+
+  ["colorado", "color", "cold"], return "col"
+  ["a", "b", "c"], return ""
+  ["spot", "spotty", "spotted"], return "spot"
+*/
+
+//time complexity = O(M * N) where M is the size of the array and N is the maximum number of chars in the string
+//space complexity = O(M)
 function longestCommonPrefix(stringsArray){
   let stringOne = stringsArray[0];
   let stringTwo = 0;
@@ -42,6 +54,7 @@ function longestCommonPrefix(stringsArray){
   return result;
 }
 
+//input examples
 console.log(longestCommonPrefix(["colorado", "color", "cold"]));
 console.log(longestCommonPrefix(["a", "b", "c"]));
 console.log(longestCommonPrefix(["spot", "spotty", "spotted"]));

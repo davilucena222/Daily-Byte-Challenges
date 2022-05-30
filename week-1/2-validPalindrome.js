@@ -1,4 +1,16 @@
-//time complexity = O(1)
+/* 
+  This question is asked by Facebook. Given a string, return whether or not it forms a palindrome ignoring case and non-alphabetical characters.
+  Note: a palindrome is a sequence of characters that reads the same forwards and backwards.
+
+  Ex: Given the following strings...
+
+  "level", return true
+  "algorithm", return false
+  "A man, a plan, a canal: Panama.", return true
+*/
+
+//time complexity = O(N)
+//space complexity = O(1)
 function validPalindrome(stringName){
   // let stringNormal = stringName;
   let re = /[\W_]/g;
@@ -14,6 +26,7 @@ function validPalindrome(stringName){
   }
 }
 
+//input examples
 validPalindrome("level");
 validPalindrome("algorithm");
 validPalindrome("A man, a plan, a canal: Panama");

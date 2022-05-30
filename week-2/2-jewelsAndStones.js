@@ -1,4 +1,15 @@
+/* 
+  This question is asked by Amazon. Given a string representing your stones and another string representing a list of jewels, return the number of stones that you have that are also jewels.
+
+  Ex: Given the following jewels and stones...
+
+  jewels = "abc", stones = "ac", return 2
+  jewels = "Af", stones = "AaaddfFf", return 3
+  jewels = "AYOPD", stones = "ayopd", return 0
+*/
+
 //time complexity = O(jewels*stones)
+//space complexity = O(N)
 function jewelsAndStones(jewels, stones) {
   let jewel = "";
   let stone = "";
@@ -27,6 +38,7 @@ function jewelsAndStones(jewels, stones) {
   return count;
 }
 
+//input examples
 console.log(jewelsAndStones("abc", "ac"));
 console.log(jewelsAndStones("Af", "AaaddfFf"));
 console.log(jewelsAndStones("AYOPD", "ayopd"));

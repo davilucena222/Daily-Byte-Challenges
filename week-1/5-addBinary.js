@@ -1,5 +1,17 @@
+/* 
+  This question is asked by Facebook. Given a string and the ability to delete at most one character, return whether or not it can form a palindrome.
+  Note: a palindrome is a sequence of characters that reads the same forwards and backwards.
+
+  Ex: Given the following strings...
+
+  "abcba", return true
+  "foobof", return true (remove the first 'o', the second 'o', or 'b')
+  "abccab", return false
+*/
+
 //time complexity = O(N)
-function binaryStringSum(binaryString1, binaryString2){
+//space complexity = O(N)
+function addBinary(binaryString1, binaryString2){
   let result = '';
   let sum = 0;
   let i = binaryString1.length - 1;
@@ -27,6 +39,7 @@ function binaryStringSum(binaryString1, binaryString2){
   return result;
 }
 
+//input examples
 console.log(binaryStringSum('100', '1'));
 console.log(binaryStringSum('11', '1'));
 console.log(binaryStringSum('1', '0'));
