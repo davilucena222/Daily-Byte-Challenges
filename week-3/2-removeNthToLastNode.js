@@ -44,6 +44,17 @@ function removeNthToLastNode(list, n){
 }
 
 //input examples
-removeNthToLastNode([1, 2, 3], 1);
-removeNthToLastNode([1, 2, 3], 2);
-removeNthToLastNode([1, 2, 3], 3);
+let l1 = new ListNode(1);
+l1.next = new ListNode(2);
+l1.next.next = new ListNode(3);
+console.log(removeNthToLastNode(l1, 1));
+
+let l2 = new ListNode(1);
+l2.next = new ListNode(2);
+l2.next.next = new ListNode(3);
+console.log(removeNthToLastNode(l2, 2));
+
+let l3 = new ListNode(1);
+l3.next = new ListNode(2);
+l3.next.next = new ListNode(3);
+console.log(removeNthToLastNode(l3, 3));

@@ -56,7 +56,26 @@ function mergeLinkedLists(list) {
 }
 
 //input examples
-mergeLinkedLists([[1, 2, 3], [4, 5, 6]]);
-mergeLinkedLists([[1, 3, 5], [2, 4, 6]]);
-mergeLinkedLists([[4, 4, 7], [1, 5, 6]]);
+let l1 = new ListNode(1);
+l1.next = new ListNode(2);
+l1.next.next = new ListNode(3);
+l2 = new ListNode(4);
+l2.next = new ListNode(5);
+l2.next.next = new ListNode(6);
+console.log(mergeLists(l1, l2));
 
+let l3 = new ListNode(1);
+l3.next = new ListNode(3);
+l3.next.next = new ListNode(5);
+l4 = new ListNode(2);
+l4.next = new ListNode(4);
+l4.next.next = new ListNode(6);
+console.log(mergeLists(l3, l4));
+
+let l5 = new ListNode(4);
+l5.next = new ListNode(4);
+l5.next.next = new ListNode(7);
+l6 = new ListNode(1);
+l6.next = new ListNode(5);
+l6.next.next = new ListNode(6);
+console.log(mergeLists(l5, l6));
