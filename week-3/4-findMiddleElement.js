@@ -1,7 +1,7 @@
 /* 
   This question is asked by Amazon. Given a non-empty linked list, return the middle node of the list. If the linked list contains an even number of elements, return the node closer to the end.
   Ex: Given the following linked lists...
-
+  
   1->2->3->null, return 2
   1->2->3->4->null, return 3
   1->null, return 1
@@ -19,16 +19,18 @@ class ListNode {
 function findMiddleElement(head) {
   let dummyHead = new ListNode(null);
   dummyHead.next = head;
-  let currentResult = dummyHead;
+
+  let currentResult = dummyHead; //to return the final result of the dummyHead
+
   let goThrough = dummyHead;
   let verifyingOneElement = dummyHead.next;
   let counter = 0;
-  
-  if(currentResult.next === null){
+
+  if(currentResult.next == null){
       return null;
   }
   
-  if(verifyingOneElement.next === null){
+  if(verifyingOneElement.next == null){
       verifyingOneElement.value;
   }
   
@@ -36,19 +38,19 @@ function findMiddleElement(head) {
       goThrough = goThrough.next;
       counter++;
   }
-  
+
   let result = 0;
-  if((counter % 2) === 1){
-      result = (counter/2) + 0.5;
+  if((counter % 2) == 0){
+    result = (counter/2) + 1;
   } else {
-      result = (counter/2) + 1;
+    result = (counter/2) + 0.5;
   }
   
-  while(currentResult.next != null && !currentResult.next === result){
+  while(currentResult.next != null && currentResult.next.value != result){
       currentResult = currentResult.next;
   }
   
-  return currentResult.next;
+  return currentResult.next.value;
 }
 
 let l1 = new ListNode(1);
