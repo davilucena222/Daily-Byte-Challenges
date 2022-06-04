@@ -24,6 +24,10 @@ function containsCycle(list){
   let oneElement = linkedList.next;
   let loopList = oneElement;
 
+  if(linkedList.next.value == null){
+    return null;
+  }
+
   while(loopList != null && loopList.next != null){
     oneElement = oneElement.next; //incrementing through each element of the list
     loopList = loopList.next.next; //incrementing jumping two elements of the list to force an encouner between the oneElement and loopList
