@@ -17,19 +17,18 @@ class ListNode {
   }
 }
 
-function reverseList(head){
-  let start = head;
-  let saved = null;
-  let headed = head;
-  
-  while(start){
-      headed = start;
-      start = start.next;
-      headed.next = saved;
-      saved = headed;
+function reverseList(head){//1 -> 2 -> 3 -> null
+  let current = head;
+  let previous = null;
+
+  while(current){
+    let holdNextNode = current.next; //saving the next node to iterate the current variable
+    current.next = previous; 
+    previous = current;
+    current = holdNextNode;
   }
-  
-  return headed;
+
+  return previous; //because current is pointing to null
 }
 
 //input examples
