@@ -25,7 +25,7 @@
 */
 
 //time complexity = O(N) 
-//space compelexity = O(N)
+//space complexity = O(N)
 class BinarySearchTree {
   constructor(value){
     this.value = value;
