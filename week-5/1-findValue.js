@@ -45,7 +45,7 @@ function returningTheReferenceNode(root, value){
     return returningTheReferenceNode(root.left, value);
   }
 
-  return root;
+  return root.value;
 }
 
 //input examples
