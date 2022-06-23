@@ -14,6 +14,9 @@ Ex: Given the following tree…
   3   3 
 return [[3, 3], [6, 2], [7]]
 */
+
+//time complexity = O(N)
+//space complexity = O(N)
 class BinaryTree {
   constructor(value) {
     this.value = value;
@@ -31,16 +34,16 @@ function bottomsUp(root) {
 
   while (queue.length > 0) {
     let size = queue.length;
-    result.push(queue.map(node => node.value));
+    result.push(queue.map((node) => node.value));
 
     while (size--) {
       let element = queue.shift();
 
-      if(element.left){
+      if (element.left) {
         queue.push(element.left);
       }
 
-      if(element.right){
+      if (element.right) {
         queue.push(element.right);
       }
     }
