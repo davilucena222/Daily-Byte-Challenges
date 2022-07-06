@@ -48,7 +48,7 @@ function generateTextMessages(digits){
       slate.pop()
     }
   }
-
+ 
   depthFirstSearch(0, digits, [])
   return result
 }
